@@ -1315,7 +1315,7 @@ li {
   }
   .p8_contents {
     display: flex;
-    gap: 250px;
+    gap: 249px;
   }
   .p8_top {
     flex-direction: column;
