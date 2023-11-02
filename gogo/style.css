@@ -3,7 +3,9 @@
   box-sizing: border-box;
   margin: 0;
 }
-
+.pd_none {
+  display: none;
+}
 .container {
   width: 100%;
   background-color: #f7f7f7;
@@ -1266,6 +1268,16 @@ li {
   position: absolute;
   top: 30px;
 }
+.black_bar_resp {
+  display: none;
+}
+.resp_menu {
+  display: none;
+}
+.menu_img {
+  height: 50px;
+  width: 50px;
+}
 @media screen and (max-width: 1200px) {
   .part1 {
     width: 100%;
@@ -1273,7 +1285,37 @@ li {
   .head_dropdown {
     display: none;
   }
+  .bar {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bar:hover {
+    background-color: #407ce8;
+  }
+  .resp_menu {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    padding: 15px;
+    border-left: 0.2px solid lightgray;
+  }
+  .black_bar_resp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+  }
   .header {
+    position: relative;
     justify-content: start;
     gap: 20px;
   }
@@ -1283,8 +1325,68 @@ li {
   .head_thumbnail {
     display: none;
   }
+  .headline_img {
+    display: none;
+  }
+  .right_inner {
+    display: none;
+  }
   .h_right {
     display: none;
+  }
+  .pd_none {
+    display: flex;
+  }
+  .h_left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .part1 {
+    gap: 0px;
+  }
+  .head_content {
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  .head_resp_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .headline {
+    color: white;
+    font-size: 25px;
+    line-height: normal;
+  }
+  .share_btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  .h_left {
+    width: 100%;
+    height: 80%;
+    gap: 5px;
+    padding-inline: 20px;
+    padding-top: 70px;
+    justify-content: end;
+  }
+  .share .h_right {
+    display: none;
+  }
+  .p2_story {
+    width: 400px;
+    height: 320px;
+    background-color: aqua;
+  }
+  .p2_img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .p3_right {
     display: none;
