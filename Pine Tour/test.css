@@ -1,0 +1,52 @@
+.btn {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+}
+:root {
+  --image1: url("square.png");
+  --image2: url("hiid2.png");
+  --image3: url("river.png");
+  --image4: url(volcano.png);
+  --image5: url(lake2.png);
+  --image6: url(square.png);
+}
+.btn1 {
+  background-color: aqua;
+}
+.btn2 {
+  background-color: red;
+}
+
+.btn3 {
+  background-color: black;
+}
+
+.pos {
+  border: 2px solid red;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  width: 772px;
+  height: 800px;
+  object-fit: cover;
+}
+
+.container .btn1:hover ~ .image {
+  background-image: var(--image1);
+  transition: 0.5s;
+}
+
+.container .btn2:hover ~ .image {
+  background-image: var(--image2);
+  transition: 0.5s;
+}
+.container .btn3:hover ~ .image {
+  background-image: var(--image3);
+  transition: 0.5s;
+}
